@@ -1,4 +1,5 @@
 Frontend tasks:
+
 - [ ] breakdown into components
 - [ ] 100ms sdk for video
 - [ ] profile page
@@ -6,6 +7,7 @@ Frontend tasks:
 - [x] registration/login page
 
 backend tasks:
+
 - [ ] api to upload images and get images (post)
 - [ ] api for voice upload
 - [ ] create database models for users, posts, comments
@@ -15,4 +17,5 @@ backend tasks:
 - [ ] follow API
 
 Others:
+
 - [] configure env
