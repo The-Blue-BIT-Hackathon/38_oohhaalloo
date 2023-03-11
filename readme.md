@@ -9,7 +9,7 @@ Frontend tasks:
 backend tasks:
 
 - [ ] api to upload images and get images (post)
-- [ ] api for voice upload
+- [x] api for voice upload
 - [ ] create database models for users, posts, comments
 - [ ] figure out session management - login etc - https://github.com/WebDevSimplified/Nodejs- Passport-Login
 - [ ] GET profile

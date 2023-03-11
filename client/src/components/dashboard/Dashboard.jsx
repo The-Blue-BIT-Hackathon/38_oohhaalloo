@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-
-import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
+import Recorder from "../audio/recorder";
 import "react-h5-audio-player/lib/styles.css";
 
 class Dashboard extends Component {
@@ -38,22 +37,7 @@ class Dashboard extends Component {
             >
               Logout
             </button>
-            <AudioPlayer
-              src='https://hanzluo.s3-us-west-1.amazonaws.com/music/wuyuwuqing.mp3'
-              onPlay={(e) => console.log("onPlay")}
-              showFilledVolume={true}
-              showJumpControls={false}
-              layout='horizontal'
-              customProgressBarSection={[
-                RHAP_UI.MAIN_CONTROLS,
-                RHAP_UI.CURRENT_TIME,
-                RHAP_UI.MAIN_CONTROLS,
-                RHAP_UI.PROGRESS_BAR,
-                RHAP_UI.DURATION,
-              ]}
-              //remove this to remove volume controls
-              customControlsSection={[RHAP_UI.VOLUME_CONTROLS]}
-            />
+            <Recorder />
           </div>
         </div>
       </div>
